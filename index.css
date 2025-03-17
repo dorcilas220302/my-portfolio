@@ -1,0 +1,865 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section{
+    width: 100vw;
+    height: 95vh;
+    background-color: rgb(245, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vw;
+}
+
+section .left{
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 0.2vw rgb(199, 195, 195);
+    height: 100%;
+    padding: 0.5vw;
+}
+
+section .right{
+    width: 77%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 0.2vw rgb(199, 195, 195);
+    position: relative;
+}
+
+
+section .left .name-photo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2vw;
+}
+
+section .left .social{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+    background-color: rgb(15, 69, 161);
+    padding: 0.5vw 2vw;
+}
+
+
+section .left .page{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(15, 69, 161);
+    /* border: solid 0.2vw rgb(15, 69, 161); */
+    padding: 0.5vw;
+    padding-top: 1vw;
+}
+
+section .left .name-photo h5{
+    font-size: 1.5vw;
+    color: rgb(44, 108, 219);
+    font-weight: 500;
+}
+
+section .left .name-photo img{
+    width: 7vw;
+    height: 7vw;
+    margin-bottom: 1vw;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: solid 0.2vw rgb(15, 69, 161);
+}
+
+
+
+section .left .social a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    color: white;
+    transition: 0.15s;
+}
+
+section .left .social a:hover{
+    cursor: pointer;
+    color: rgb(199, 195, 195);
+}
+
+
+
+section .left .page .about{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+    padding: 0.5vw;
+    transition: 0.15s;
+}
+
+section .left .page .about i{
+    font-size: 1.3vw;
+    color: white;
+    margin-right: 3vw;
+}
+
+section .left .page .about h3{
+    font-size: 1.3vw;
+    color: white;
+    font-weight: 400;
+}
+
+
+section .left .page .about:hover h3{
+    cursor: pointer;
+    color: rgb(199, 195, 195);
+}
+
+
+section .left .page .about:hover i{
+    cursor: pointer;
+    color: rgb(44, 108, 219);
+}
+
+
+section .left .page .about:active i{
+    cursor: pointer;
+    color: white;
+}
+
+
+
+section .right .home{
+    width: 99%;
+    height: 99%;
+    position: absolute;
+    background:url(./image/firstOne.jpg),rgb(98, 95, 95);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section .right .home .love{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+section .right .home .love p{
+    color: rgb(199, 195, 195);
+    font-size: 1.3vw;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+
+section .right .home h4{
+    font-size: 3.5vw;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 1vw;
+    word-spacing: 0.3vw;
+}
+
+section .right .home p{
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: antiquewhite;
+    text-transform: capitalize;
+}
+
+section .right .home p span{
+    font-size: 2vw;
+    color: white;
+    font-style: italic;
+}
+
+
+section .right .about{
+    width: 99%;
+    height: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vw;
+    /* display: none; */
+    position: absolute;
+    background-color: white;
+}
+
+section .right .about .upper{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3vw;
+}
+
+section .right .about .upper h3{
+    font-size: 2vw;
+    color: rgb(15, 69, 161);
+    margin-bottom: 1vw;
+    padding: 0.5vw;
+    border-bottom: solid 0.2vw rgb(44, 108, 219);
+    width: 8vw;
+}
+
+section .right .about .upper  p{
+    color: grey;
+    font-size: 1.3vw;
+}
+
+section .right .about .upper  p span{
+    font-size: 1.5vw;
+    font-style: italic;
+}
+
+section .right .about .info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+section .right .about .info img{
+    width: 17vw;
+    height: 17vw;
+    border-radius: 0.5vw;
+}
+section .right .about .info .birth{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: red; */
+    margin-left: 1vw;
+}
+
+section .right .about .info .birth  h6{
+    font-size: 1.6vw;
+    color: rgb(44, 108, 219);
+    margin-bottom: 1vw;
+    padding: 0.5vw;
+    text-transform: capitalize;
+    font-weight:500 ;
+}
+section .right .about .info .birth p{
+    color: grey;
+    font-size: 1.3vw;
+    margin-bottom: 1vw;
+}
+
+section .right .about .info .birth .chevron{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blue; */
+}
+
+section .right .about .info .birth .chevron .contentDiv{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section .right .about .info .birth .chevron .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vw;
+}
+
+section .right .about .info .birth .chevron .content i{
+    color: rgb(44, 108, 219);
+    font-size: 1.5vw;
+    margin-right: 0.5vw;
+}
+
+section .right .about .info .birth .chevron .content span{
+    font-weight: 500;
+    color: rgb(98, 95, 95);
+    font-size: 1.3vw;
+}
+
+section .right .about .info .birth .chevron .content h6{
+    font-weight: 300;
+    color: rgb(98, 95, 95);
+    font-size: 1.3vw;
+    margin: 0 !important;
+}
+
+
+
+section .right .skills{
+    width: 99%;
+    height: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vw;
+    /* display: none; */
+    position: absolute;
+}
+
+section .right .skills .skill-up{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3vw;
+}
+
+
+section .right .skills .skill-up h3{
+    font-size: 2vw;
+    color: rgb(15, 69, 161);
+    margin-bottom: 1vw;
+    padding: 0.5vw;
+    border-bottom: solid 0.2vw rgb(44, 108, 219);
+    width: 8vw;
+}
+
+section .right .skills .skill-up p{
+    color: grey;
+    font-size: 1.3vw;
+}
+
+section .right .skills .skill-down{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .right .skills .skill-down .skill-down-left{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+section .right .skills .skill-down .skill-down-left .content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    margin-bottom: 1vw;
+}
+
+section .right .skills .skill-down .skill-down-left .content .letter{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: 0.5vw;
+}
+section .right .skills .skill-down .skill-down-left .content .letter h5{
+    color: rgb(98, 95, 95);
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+section .right .skills .skill-down .skill-down-left .content .graph{
+    width: 100%;
+    height: 1vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+
+@keyframes html-animation {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+@keyframes php-animation {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes node-animation {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+
+section .right .skills .skill-down .skill-down-left .content .graph .after{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(44, 108, 219);
+    left: 0;
+}
+
+
+
+
+
+section .right .work{
+    width: 99%;
+    height: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vw;
+    position: absolute;
+}
+
+
+section .right .work .upper{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3vw;
+}
+
+
+section .right .work .upper h3{
+    font-size: 2vw;
+    color: rgb(15, 69, 161);
+    margin-bottom: 1vw;
+    padding: 0.5vw;
+    border-bottom: solid 0.2vw rgb(44, 108, 219);
+    width: 8vw;
+}
+
+section .right .work .upper  p{
+    color: grey;
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+section .right .work .upper  p span{
+    font-style: italic;
+    font-size: 1.4vw;
+    text-transform: capitalize;
+}
+
+
+
+section .right .work .down{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1vw;
+   height: 60%;
+   position: relative;
+}
+
+section .right .work  .number-holder{
+    width: 100%;
+    height: 3vw;
+    display: flex;
+   align-items: start;
+   justify-content: space-evenly;
+   z-index: 5;
+   top: -2vw;
+}
+
+section .right .work  .number-holder .number-of-div{
+    width: 2vw;
+    height: 2vw;
+    background: rgb(44, 108, 219);
+    color: white;
+    border-radius: 50%;
+    font-size: 1.3vw;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .right .work  .number-holder .number-of-div:hover{
+    color: rgb(44, 108, 219);
+    background-color: white;
+    box-shadow: 0 0 0.2vw rgb(98, 95, 95);
+    transition: 0.15s
+}
+
+section .right .work  .number-holder .number-of-div:active{
+    color: rgb(44, 108, 219);
+    background-color: white;
+    box-shadow: 0 0 0.4vw rgb(98, 95, 95);
+    transition: 0.15s;
+}
+
+
+section .right .work .down .project-holder-mine{
+    width: 100%;
+    display: flex;
+   align-items: start;
+   justify-content: space-around;
+   position: absolute;
+   margin-top: 1vw;
+   top: 0;
+}
+
+
+section .right .work .down .project{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.2vw;
+    padding: 0.5vw;
+    background-color: rgb(44, 108, 219);
+    height: 20vw;
+    margin: 0.5vw 2vw;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    box-shadow: 0 0 0.2vw rgb(199, 195, 195);
+}
+
+section .right .work .down .project:hover::after{
+    height: 50%;
+    bottom: 0;
+}
+
+section .right .work .down .project:hover img{
+    opacity: 0;
+}
+
+section .right .work .down .project:hover .description{
+    opacity: 0;
+}
+
+section .right .work .down .project:hover::before{
+    height: 50%;
+    top: 0;
+}
+
+section .right .work .down .project:hover .after{
+   opacity: 1;
+}
+
+section .right .work .down .project::after{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -1vw;
+    z-index: 2;
+    background-color: rgba(34, 31, 31, 0.5);
+    content: "";
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transition: 0.3s;
+}
+
+section .right .work .down .project::before{
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -1vw;
+    z-index: 2;
+    background-color: rgba(34, 31, 31, 0.5);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+section .right .work .down .agency:hover{
+    background-color: transparent;
+    background: url(./image/agencybackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section .right .work .down .clinic:hover{
+    background-color: transparent;
+    background: url(./image/clinicBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section .right .work .down .energy:hover{
+    background-color: transparent;
+    background: url(./image/energyBackGround.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+section .right .work .down .farm:hover{
+    background-color: transparent;
+    background: url(./image/farmBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section .right .work .down .moto:hover{
+    background-color: transparent;
+    background: url(./image/motoBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section .right .work .down .portfolio:hover{
+    background-color: transparent;
+    background: url(./image/portfoliobackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section .right .work .down .restaurant:hover{
+    background-color: transparent;
+    background: url(./image/restaurantbackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section .right .work .down .taxi:hover{
+    background-color: transparent;
+    background: url(./image/taxibackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+section .right .work .down .project .after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    z-index: 3;
+    /* background-color: rgba(98, 91, 91, 0.5); */
+    opacity: 0;
+    transition: 0.3s;
+}
+
+section .right .work .down .project .after i{
+    width: 4vw;
+    height: 4vw;
+    background-color: white;
+    color: rgb(44, 108, 219);
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+
+section .right .work .down .project .after i:hover{
+   transform: rotateZ(45deg);
+   color: rgb(15, 69, 161);
+}
+section .right .work .down .project img{
+    width: 100%;
+    height: 10vw;
+    border-radius: 0.2vw;
+    margin-bottom: 1vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+section .right .work .down .project .description{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section .right .work .down .project .description h6{
+  width: 50%;
+  margin-bottom: 0.5vw;
+  color: rgb(44, 108, 219);
+  background-color: white;
+  font-size: 1.5vw;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+section .right .work .down .project .description p{
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 300;
+    text-align: center;
+}
+
+section .right .work .down .project .description p span{
+    font-size: 1.4vw;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+
+
+
+
+section .right .contact{
+    width: 99%;
+    height: 99%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vw;
+    position: absolute;
+}
+
+
+section .right .contact .upper{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3vw;
+    padding: 2vw;
+}
+
+
+section .right .contact .upper h3{
+    font-size: 2vw;
+    color: rgb(15, 69, 161);
+    margin-bottom: 1vw;
+    padding: 0.5vw;
+    border-bottom: solid 0.2vw rgb(44, 108, 219);
+    width: 8vw;
+}
+
+
+section .right .contact .upper  p{
+    color: grey;
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+section .right .contact .info{
+    width: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3vw;
+    box-shadow: 0 0 0.3vw rgb(169, 162, 162);
+    padding: 2vw;
+}
+
+section .right .contact .tool{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.5vw;
+    box-shadow: 0 0.1vw 0.1vw rgb(98, 95, 95);
+    margin-bottom: 1vw;
+    padding: 0.5vw;
+}
+
+section .right .contact .tool i{
+    width: 3vw;
+    height: 3vw;
+    background-color: rgb(44, 108, 219);
+    color: white;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+section .right .contact .tool  h4{
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: rgb(44, 108, 219);
+}
+
+section .right .contact .photo{
+    width: 40vw;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -10vw;
+    background: url(./image/callbackground.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 2vw;
+    background-size: cover;
+}
+
