@@ -5,6 +5,9 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body{
+    overflow: hidden;
+}
 section{
     width: 100vw;
     height: 95vh;
@@ -56,8 +59,34 @@ section .left .social{
     margin-bottom: 2vw;
     background-color: rgb(15, 69, 161);
     padding: 0.5vw 2vw;
+    position: relative;
 }
 
+section .left .social h5{
+    color: rgb(44, 108, 219);
+    font-size: 1.2vw;
+    font-weight: 400;
+    position: absolute;
+    bottom: -2vw;
+    padding: 1vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+section .left .social .h51{
+    left: 1vw;
+}
+
+section .left .social .h52{
+    left: 40%;
+}
+
+section .left .social .h53{
+    right: 1vw;
+}
 
 section .left .page{
     width: 100%;
@@ -555,7 +584,7 @@ section .right .work .down .project-holder-mine{
 
 
 section .right .work .down .project{
-    width: 25%;
+    width: 32%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -569,6 +598,7 @@ section .right .work .down .project{
     transition: 0.3s;
     overflow: hidden;
     box-shadow: 0 0 0.2vw rgb(199, 195, 195);
+    border-radius: 1vw;
 }
 
 section .right .work .down .project:hover::after{
@@ -723,6 +753,7 @@ section .right .work .down .project .after i:hover{
    transform: rotateZ(45deg);
    color: rgb(15, 69, 161);
 }
+
 section .right .work .down .project img{
     width: 100%;
     height: 10vw;
@@ -818,6 +849,7 @@ section .right .contact .info{
     margin-bottom: 3vw;
     box-shadow: 0 0 0.3vw rgb(169, 162, 162);
     padding: 2vw;
+    border-radius: 2vw 0 2vw 0;
 }
 
 section .right .contact .tool{
@@ -829,6 +861,7 @@ section .right .contact .tool{
     box-shadow: 0 0.1vw 0.1vw rgb(98, 95, 95);
     margin-bottom: 1vw;
     padding: 0.5vw;
+
 }
 
 section .right .contact .tool i{
@@ -850,6 +883,402 @@ section .right .contact .tool  h4{
 }
 
 section .right .contact .photo{
+    width: 32vw;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 2vw;
+    top: 22%;
+    background: url(./image/callfore.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 2vw;
+    background-size: cover;
+    border-radius: 2vw 0 2vw 0;
+}
+
+
+section .left{
+    background-color: black;
+    transform: translateX(0);
+}
+
+section .right{
+    position: relative;
+}
+
+section .right .fa-align-justify{
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  font-size: 3vw;
+  color: white;
+  z-index: 1;
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(44, 108, 219);
+  border-radius: 50%;
+  height: 6vw;
+  width: 6vw;
+  display: none;
+  transition: 0.15s;
+}
+
+section .right .fa-align-justify:active{
+    background-color: black;
+}
+
+
+@media (max-width: 780px) {
+
+    section{
+        width: 100vw;
+        height: 95vh;
+        background-color: rgb(245, 241, 241);
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        padding: 0.5vw;
+        position: relative;
+    }
+
+   section .left{
+    width: 60%;
+    transform: translateX(-100vw);
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 2vw;
+    transition: 0.3s;
+    height: 98%;
+    }
+
+    section .left .name-photo img{
+        width: 13vw;
+        height: 13vw;
+    }
+
+    section .left .name-photo h5{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5vw 2vw;
+        color: white;
+        background-color: rgb(15, 69, 161);
+        font-size: 3vw;
+    }
+
+    section .left .page .about h3{
+       font-size: 2.5vw;
+    }
+    section .left .page .about h3 i{
+        font-size: 2vw;
+    }
+
+    section .left .social{
+        padding: 1vw 2vw;
+        margin-bottom: 2vw;
+    }
+    
+    section .left .social i{
+       font-size: 3vw;
+    }
+
+    section .left .page .about i{
+        font-size: 2vw;
+    }
+
+    section .right .fa-align-justify{
+        display: flex;
+    }
+
+   section .right .home h4{
+    font-size: 6vw;
+   }
+   
+   section .right .home p{
+    font-size: 3vw;
+   }
+   
+   section .right .home p span{
+    font-size: 3vw;
+   }
+   
+   section .right .home .love p{
+    font-size: 3vw;
+   }
+
+   
+section .right .fa-align-justify{
+    display: flex;
+  }
+
+
+section .right .about{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 2vw;
+    overflow: scroll;
+}
+
+section .right .about .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .right .about .info .birth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section .right .about .info .birth h6{
+    font-size: 3vw;
+}
+section .right .about .info .birth p{
+    font-size: 2.4vw;
+}
+
+section .right .about .info img{
+    display: none;
+}
+
+section .right .about .info .chevron{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+section .right .about .info .chevron .contentDiv{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+section .right .about .info .chevron .contentDiv .content i{
+  font-size: 2.4vw;
+}
+
+section .right .about .info .chevron .contentDiv .content h6{
+    font-size: 2.4vw;
+  }
+  section .right .about .info .chevron .contentDiv .content span{
+    font-size: 2.4vw;
+  }
+
+
+section .right .about .upper h3{
+    font-size: 4vw;
+}
+
+section .right .about .upper p{
+    font-size: 2.4vw;
+}
+
+section .right .about .upper p span{
+    font-size: 2.4vw;
+}
+
+section .right .skills{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+section .right .skills .skill-up h3{
+    font-size: 4vw;
+}
+
+section .right .skills .skill-up p{
+    font-size: 2.3vw;
+}
+
+section .right .skills .skill-down .skill-down-left .content .letter h5{
+  font-size: 2.3vw;
+}
+  
+section .right .skills .skill-down .skill-down-left .content{
+    margin-bottom: 2vw;
+  }
+    
+  section .right .work {
+    overflow: scroll;
+  }
+
+  section .right .work .upper h3{
+    font-size: 4vw;
+  }
+  
+  section .right .work .upper p{
+    font-size: 2.3vw;
+  }
+  
+  section .right .work .upper p span{
+    font-size: 2.3vw;
+  }
+  
+  
+  section .right .work  .number-holder{
+  margin-bottom: 3vw;
+  }
+
+  section .right .work  .number-holder .number-of-div{
+    width: 4vw;
+    height: 4vw;
+    font-size: 2vw;
+  }
+
+
+  
+section .right .work .down .project .description h6{
+    width: 50%;
+    margin-bottom: 0.5vw;
+    color: rgb(44, 108, 219);
+    background-color: white;
+    font-size: 2vw;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  
+  section .right .work .down .project{
+  width: 40%;
+  padding: 2vw;
+  height: auto;
+}
+  
+  section .right .work .down .project .description p{
+      color: white;
+      font-size: 2vw;
+      font-weight: 300;
+      text-align: center;
+  }
+  
+  section .right .work .down .project .description p span{
+      font-size: 2vw;
+      font-style: italic;
+      text-transform: capitalize;
+  }
+  
+  
+section .right .work .down .project img{
+    width: 100%;
+    height: 15vw;
+    border-radius: 0.2vw;
+    margin-bottom: 1vw;
+    object-fit: cover;
+    object-position: center;
+}
+  
+
+
+
+
+
+
+
+
+/* contact */
+
+section .right .contact{
+    width: 99%;
+    height: 99%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    padding: 1vw;
+    position: absolute;
+}
+
+
+section .right .contact .upper{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3vw;
+    padding: 2vw;
+}
+
+
+section .right .contact .upper h3{
+    font-size: 4vw;
+    color: rgb(15, 69, 161);
+    margin-bottom: 1vw;
+    padding: 0.5vw;
+    border-bottom: solid 0.2vw rgb(44, 108, 219);
+    width: 8vw;
+}
+
+
+section .right .contact .upper  p{
+    color: grey;
+    font-size: 2.4vw;
+    font-weight: 400;
+}
+
+section .right .contact .info{
+    width: 70%;
+    display: flex;
+    align-items: start;
+    justify-self: start;    
+    margin-bottom: 3vw;
+    background-color: rgb(44, 108, 219);
+}
+
+section .right .contact .info .tool{
+    width: 100% !important;
+    height: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    margin-bottom: 3vw;
+    box-shadow: none !important;
+    padding: 1vw 0.5vw;
+    border-bottom: solid 0.1vw white;
+}
+
+section .right .contact .info .tool i{
+    width: 5vw;
+    height: 5vw;
+    background-color:white;
+    color: rgb(44, 108, 219);
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+section .right .contact .info .tool  h4{
+    font-size: 3vw;
+    font-weight: 400;
+    color: white;
+}
+
+section .right .contact .photo{
     width: 40vw;
     height: 80%;
     display: flex;
@@ -861,8 +1290,14 @@ section .right .contact .photo{
     background-repeat: no-repeat;
     background-position: 0 2vw;
     background-size: cover;
+    display: none;
 }
 
 
+  
+  
+
+    
+}
 
 

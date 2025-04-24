@@ -236,7 +236,7 @@ skillLeftAnimation.addEventListener("click",async()=>{
     
 const htmlControler=async()=>{
     setInterval(() => {
-        if (g <= 99) {
+        if (g <= 79) {
             g=g+1
             textContentHtml.forEach(hundred => {
                 hundred.textContent=""
@@ -250,7 +250,7 @@ const htmlControler=async()=>{
 
 const phpControler=async()=>{
     setInterval(() => {
-        if (f <= 79) {
+        if (f <= 69) {
             f=f+1
             textContentPhp.textContent=""
             textContentPhp.textContent=`${f}%`
@@ -261,7 +261,7 @@ const phpControler=async()=>{
 
 const nodeControler=async()=>{
     setInterval(() => {
-        if (z <= 89) {
+        if (z <= 84) {
             z=z+1
             textContentNode.textContent=""
             textContentNode.textContent=`${z}%`
@@ -275,11 +275,64 @@ nodeControler()
 phpControler()
 htmlControler()
 
-
-
 })
 
 
 
+///mobile version js
 
+const openLeftElement=document.querySelector(".fa-align-justify")
+
+const mobileLeft=document.querySelector("#mobile-left")
+
+let mobile=true
+
+openLeftElement.addEventListener("click",()=>{
+
+    if (mobile) {
+    mobileLeft.style.transform="translateX(-8vw)"
+    } else {
+    mobileLeft.style.transform="translateX(-100vw)"
+    }
+
+    mobile=!mobile
+})
+
+
+const toFaceBoook=document.querySelector("#to-facebook")
+const toInstagram=document.querySelector("#to-instagram")
+const toWhatsapp=document.querySelector("#to-whatsapp")
+
+const H5One=document.querySelector(".h51")
+const H5Two=document.querySelector(".h52")
+const H5Three=document.querySelector(".h53")
+
+
+toFaceBoook.addEventListener("mouseover",()=>{
+    H5One.style.display="flex"
+})
+
+toFaceBoook.addEventListener("mouseout",()=>{
+    H5One.style.display="none"
+})
+
+
+
+toInstagram.addEventListener("mouseover",()=>{
+    H5Two.style.display="flex"
+})
+
+toInstagram.addEventListener("mouseout",()=>{
+    H5Two.style.display="none"
+})
+
+
+
+toWhatsapp.addEventListener("mouseover",()=>{
+    H5Three.style.display="flex"
+})
+
+toWhatsapp.addEventListener("mouseout",()=>{
+    H5Three.style.display="none"
+})
 
