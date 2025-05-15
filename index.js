@@ -287,16 +287,22 @@ const mobileLeft=document.querySelector("#mobile-left")
 
 let mobile=true
 
-openLeftElement.addEventListener("click",()=>{
-
+openLeftElement.addEventListener("click",(e)=>{
+      e.stopPropagation()
     if (mobile) {
-    mobileLeft.style.transform="translateX(-8vw)"
+    mobileLeft.style.transform="translateX(-10vw)"
     } else {
     mobileLeft.style.transform="translateX(-100vw)"
     }
 
     mobile=!mobile
 })
+
+
+// document.addEventListener("click",()=>{
+//     mobileLeft.style.transform="translateX(-100vw)"
+//    mobile=true
+// })
 
 
 const toFaceBoook=document.querySelector("#to-facebook")
@@ -336,3 +342,12 @@ toWhatsapp.addEventListener("mouseout",()=>{
     H5Three.style.display="none"
 })
 
+
+const btnAboutOpen=document.querySelector("#btn-about-open")
+
+btnAboutOpen.addEventListener("click",async()=>{
+    sectionToOpen[1].style.transition="0.5s"
+    sectionToOpen[1].style.transform="scale(1.0)rotateX(360deg)"
+
+
+})

@@ -10,12 +10,13 @@ body{
 }
 section{
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     background-color: rgb(245, 241, 241);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5vw;
+    padding: 0.2vw;
+    background:linear-gradient(rgb(12, 11, 48),rgb(20, 7, 53));
 }
 
 section .left{
@@ -25,22 +26,39 @@ section .left{
     justify-content: center;
     flex-direction: column;
     background-color: white;
-    box-shadow: 0 0 0.2vw rgb(199, 195, 195);
     height: 100%;
     padding: 0.5vw;
+    background:linear-gradient(rgb(25, 3, 81),rgb(224, 8, 83),rgb(25, 3, 81),rgb(125, 5, 47));
+    border: solid rgb(59, 43, 100) 0.15vw;
 }
 
 section .right{
-    width: 77%;
+    width: 78%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    box-shadow: 0 0 0.2vw rgb(199, 195, 195);
+    background:linear-gradient(rgb(12, 11, 48),rgb(20, 7, 53));
     position: relative;
+    border: solid rgb(59, 43, 100) 0.15vw;
+    border-left: none;
 }
 
+@keyframes right-border-animation {
+    0%{
+        border: solid rgb(59, 43, 100) 0.15vw;
+    }
+    50%{
+        border: solid rgb(245, 241, 241) 0.15vw;
+    }
+    75%{
+
+    }
+    100%{
+        border: solid rgb(59, 43, 100) 0.15vw;
+    }
+
+}
 
 section .left .name-photo{
     width: 100%;
@@ -57,9 +75,10 @@ section .left .social{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2vw;
-    background-color: rgb(15, 69, 161);
+    background-color: rgb(12, 11, 48);
     padding: 0.5vw 2vw;
     position: relative;
+    border: solid 0.2vw white;
 }
 
 section .left .social h5{
@@ -94,8 +113,8 @@ section .left .page{
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(15, 69, 161);
-    /* border: solid 0.2vw rgb(15, 69, 161); */
+    background: rgb(12, 11, 48);
+    border: solid 0.2vw white;
     padding: 0.5vw;
     padding-top: 1vw;
 }
@@ -104,16 +123,17 @@ section .left .name-photo h5{
     font-size: 1.5vw;
     color: rgb(44, 108, 219);
     font-weight: 500;
+    display: none;
 }
 
 section .left .name-photo img{
-    width: 7vw;
-    height: 7vw;
+    width: 8vw;
+    height: 8vw;
     margin-bottom: 1vw;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
-    border: solid 0.2vw rgb(15, 69, 161);
+    border: solid 0.2vw white;
 }
 
 
@@ -178,19 +198,97 @@ section .left .page .about:active i{
 
 
 section .right .home{
-    width: 99%;
-    height: 99%;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    background:url(./image/firstOne.jpg),rgb(98, 95, 95);
+    background:url(./image/back.jpg),rgb(47, 72, 85);
+    /* background:url(./image/space1\ -\ Copie.jpg),rgb(123, 142, 152); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 10vw;
+    padding-left: 10vw;
+}
+
+section .right .home .science-box{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: 1vw;
+    padding: 1vw 0;
+    display: none;
+}
+section .right .home .science-box i{
+    font-size: 2vw;
+    width: 5vw;
+    height: 5vw;
+    background-color: white;
+    border-radius: 50%;
+    color: rgb(0, 2, 16);
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
+
+
+
+section .right .home .science-box-2{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    right: 1vw;
+    padding: 1vw 0;
+}
+section .right .home .science-box-2 i{
+    width: 3vw;
+    height: 3vw;
+    background-color: white;
+    border-radius: 50%;
+    color: rgb(0, 2, 16);
+    font-size: 1.3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+section .right .home .about-btn{
+    width: 50%;
+    border: white;
+    background-color:rgb(0, 2, 16);
+    border-radius:0.2vw;
+    padding: 1vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: 300;
+    margin-top: 5vw;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+section .right .home .about-btn:hover{
+   background-color: black;
+}
+
+section .right .home .about-btn:active{
+    background-color:rgb(12, 11, 48);
+ }
 
 section .right .home .love{
     display: flex;
@@ -199,26 +297,28 @@ section .right .home .love{
     padding: 1vw;
     width: 100%;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    right: 10vw;
+    bottom: 3vw;
 }
 
 section .right .home .love p{
     color: rgb(199, 195, 195);
-    font-size: 1.3vw;
-    font-weight: 400;
+    font-size: 2vw;
+    font-weight: 500;
     text-align: center;
     width: 100%;
     text-transform: capitalize;
+    text-shadow: none;
 }
 
 
 section .right .home h4{
-    font-size: 3.5vw;
+    font-size: 4vw;
     color: white;
     text-transform: capitalize;
     margin-bottom: 1vw;
     word-spacing: 0.3vw;
+    text-shadow: 0 -0.5vw black;
 }
 
 section .right .home p{
@@ -236,8 +336,8 @@ section .right .home p span{
 
 
 section .right .about{
-    width: 99%;
-    height: 99%;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -246,6 +346,11 @@ section .right .about{
     /* display: none; */
     position: absolute;
     background-color: white;
+    background: url(./image/bg1.jpg),rgb(137, 131, 131);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode:multiply;
 }
 
 section .right .about .upper{
@@ -258,8 +363,8 @@ section .right .about .upper{
 }
 
 section .right .about .upper h3{
-    font-size: 2vw;
-    color: rgb(15, 69, 161);
+    font-size: 3vw;
+    color:rgb(44, 108, 219);
     margin-bottom: 1vw;
     padding: 0.5vw;
     border-bottom: solid 0.2vw rgb(44, 108, 219);
@@ -267,14 +372,23 @@ section .right .about .upper h3{
 }
 
 section .right .about .upper  p{
-    color: grey;
+    color: white;
     font-size: 1.3vw;
+    display: inline-block;
+    font-weight: 500;
+    padding: 1vw;
+    background-color: rgba(64, 92, 141, 0.5);
+    border-radius: 0 1vw 0 1vw ;
 }
 
-section .right .about .upper  p span{
-    font-size: 1.5vw;
-    font-style: italic;
+section .right .about .upper .dot{
+    width: 1vw;
+    height: 1vw;
+    background-color: rgb(224, 8, 83);
+    border-radius: 50%;
+    display: inline-block;
 }
+
 
 section .right .about .info{
     width: 100%;
@@ -284,29 +398,35 @@ section .right .about .info{
 }
 
 section .right .about .info img{
-    width: 17vw;
-    height: 17vw;
+    width: 19vw;
+    height: 19vw;
     border-radius: 0.5vw;
+    border-radius: 50%;
 }
 section .right .about .info .birth{
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    /* background-color: red; */
     margin-left: 1vw;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    background-color: rgba(255, 255, 255, 0.1);
+
 }
 
 section .right .about .info .birth  h6{
     font-size: 1.6vw;
-    color: rgb(44, 108, 219);
+    color: white;
     margin-bottom: 1vw;
     padding: 0.5vw;
     text-transform: capitalize;
     font-weight:500 ;
+    border-bottom: solid white;
+    padding-bottom: 0.5vw;
 }
 section .right .about .info .birth p{
-    color: grey;
+    color: rgb(214, 220, 221);
     font-size: 1.3vw;
     margin-bottom: 1vw;
 }
@@ -334,20 +454,20 @@ section .right .about .info .birth .chevron .content{
 }
 
 section .right .about .info .birth .chevron .content i{
-    color: rgb(44, 108, 219);
+    color: rgb(15, 69, 161);
     font-size: 1.5vw;
     margin-right: 0.5vw;
 }
 
 section .right .about .info .birth .chevron .content span{
     font-weight: 500;
-    color: rgb(98, 95, 95);
+    color: rgb(214, 220, 221);
     font-size: 1.3vw;
 }
 
 section .right .about .info .birth .chevron .content h6{
     font-weight: 300;
-    color: rgb(98, 95, 95);
+    color: rgb(214, 220, 221);
     font-size: 1.3vw;
     margin: 0 !important;
 }
@@ -355,15 +475,19 @@ section .right .about .info .birth .chevron .content h6{
 
 
 section .right .skills{
-    width: 99%;
-    height: 99%;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     padding: 1vw;
     /* display: none; */
     position: absolute;
+    background: url(./image/ChatGPT\ Image\ 13\ mai\ 2025\,\ 08_41_15.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 section .right .skills .skill-up{
@@ -372,12 +496,12 @@ section .right .skills .skill-up{
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 3vw;
+    margin-bottom: 4vw;
 }
 
 
 section .right .skills .skill-up h3{
-    font-size: 2vw;
+    font-size: 3vw;
     color: rgb(15, 69, 161);
     margin-bottom: 1vw;
     padding: 0.5vw;
@@ -386,8 +510,10 @@ section .right .skills .skill-up h3{
 }
 
 section .right .skills .skill-up p{
-    color: grey;
+    color: rgb(214, 220, 221);
     font-size: 1.3vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1vw;
 }
 
 section .right .skills .skill-down{
@@ -422,9 +548,9 @@ section .right .skills .skill-down .skill-down-left .content .letter{
     margin-bottom: 0.5vw;
 }
 section .right .skills .skill-down .skill-down-left .content .letter h5{
-    color: rgb(98, 95, 95);
+    color: rgb(214, 220, 221);
     font-size: 1.3vw;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 section .right .skills .skill-down .skill-down-left .content .graph{
@@ -443,7 +569,7 @@ section .right .skills .skill-down .skill-down-left .content .graph{
         width: 0;
     }
     100%{
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -453,7 +579,7 @@ section .right .skills .skill-down .skill-down-left .content .graph{
         width: 0;
     }
     100%{
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -462,7 +588,7 @@ section .right .skills .skill-down .skill-down-left .content .graph{
         width: 0;
     }
     100%{
-        width: 90%;
+        width: 85%;
     }
 }
 
@@ -471,23 +597,26 @@ section .right .skills .skill-down .skill-down-left .content .graph .after{
     width: 0;
     height: 100%;
     position: absolute;
-    background-color: rgb(44, 108, 219);
+    background: linear-gradient(rgb(44, 108, 219),rgb(224, 8, 83));
     left: 0;
 }
 
 
-
-
-
 section .right .work{
-    width: 99%;
-    height: 99%;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     padding: 1vw;
     position: absolute;
+    background: url(./image/black1.jpg),rgb(72, 69, 135);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+
 }
 
 
@@ -502,7 +631,7 @@ section .right .work .upper{
 
 
 section .right .work .upper h3{
-    font-size: 2vw;
+    font-size: 3vw;
     color: rgb(15, 69, 161);
     margin-bottom: 1vw;
     padding: 0.5vw;
@@ -511,9 +640,12 @@ section .right .work .upper h3{
 }
 
 section .right .work .upper  p{
-    color: grey;
+    background: rgba(15, 69, 161,0.25);
     font-size: 1.3vw;
-    font-weight: 400;
+    font-weight: 500;
+    padding: 2vw;
+    border-radius: 1vw;
+    color: white;
 }
 
 section .right .work .upper  p span{
@@ -529,7 +661,6 @@ section .right .work .down{
    display: flex;
    align-items: center;
    justify-content: center;
-   padding: 1vw;
    height: 60%;
    position: relative;
 }
@@ -584,21 +715,20 @@ section .right .work .down .project-holder-mine{
 
 
 section .right .work .down .project{
-    width: 32%;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 0.2vw;
     padding: 0.5vw;
-    background-color: rgb(44, 108, 219);
     height: 20vw;
     margin: 0.5vw 2vw;
     position: relative;
     transition: 0.3s;
     overflow: hidden;
-    box-shadow: 0 0 0.2vw rgb(199, 195, 195);
     border-radius: 1vw;
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 section .right .work .down .project:hover::after{
@@ -755,12 +885,13 @@ section .right .work .down .project .after i:hover{
 }
 
 section .right .work .down .project img{
-    width: 100%;
+    width: 10vw;
     height: 10vw;
     border-radius: 0.2vw;
     margin-bottom: 1vw;
     object-fit: cover;
     object-position: center;
+    border-radius: 50%;
 }
 
 section .right .work .down .project .description{
@@ -781,6 +912,7 @@ section .right .work .down .project .description h6{
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0.3vw;
 }
 
 
@@ -802,14 +934,18 @@ section .right .work .down .project .description p span{
 
 
 section .right .contact{
-    width: 99%;
-    height: 99%;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
     padding: 1vw;
     position: absolute;
+    background: url(./image/black2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -819,13 +955,13 @@ section .right .contact .upper{
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 3vw;
-    padding: 2vw;
+    margin-bottom: 2vw;
+    /* padding: 2vw; */
 }
 
 
 section .right .contact .upper h3{
-    font-size: 2vw;
+    font-size: 3vw;
     color: rgb(15, 69, 161);
     margin-bottom: 1vw;
     padding: 0.5vw;
@@ -835,21 +971,24 @@ section .right .contact .upper h3{
 
 
 section .right .contact .upper  p{
-    color: grey;
+    color: rgb(214, 220, 221);
     font-size: 1.3vw;
     font-weight: 400;
+    background-color: rgba(15, 69, 161,0.25);
+    padding: 1vw;
+    width: 50%;
 }
 
 section .right .contact .info{
     width: 50%;
+    height: 35vw;
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 3vw;
-    box-shadow: 0 0 0.3vw rgb(169, 162, 162);
     padding: 2vw;
-    border-radius: 2vw 0 2vw 0;
+   background-color: rgba(31, 38, 48, 0.3);
 }
 
 section .right .contact .tool{
@@ -858,16 +997,15 @@ section .right .contact .tool{
     align-items: center;
     justify-content: space-between;
     height: 3.5vw;
-    box-shadow: 0 0.1vw 0.1vw rgb(98, 95, 95);
-    margin-bottom: 1vw;
-    padding: 0.5vw;
-
+    margin-bottom: 3vw;
+    padding: 2vw;
+   border: solid rgb(214, 220, 221) 0.1vw;
 }
 
 section .right .contact .tool i{
     width: 3vw;
     height: 3vw;
-    background-color: rgb(44, 108, 219);
+    background-color: rgb(0, 2, 16);
     color: white;
     font-size: 1.5vw;
     display: flex;
@@ -877,26 +1015,73 @@ section .right .contact .tool i{
 }
 
 section .right .contact .tool  h4{
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     font-weight: 400;
-    color: rgb(44, 108, 219);
+    color: rgb(245, 241, 241);
 }
 
 section .right .contact .photo{
-    width: 32vw;
-    height: 70%;
+    width: 35vw;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     position: absolute;
+    padding: 1vw;
     right: 2vw;
-    top: 22%;
-    background: url(./image/callfore.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 2vw;
     background-size: cover;
-    border-radius: 2vw 0 2vw 0;
+    border-radius: 2vw;
+    background-color: rgba(15, 69, 161,0.25);
+    margin-top: 2vw;
 }
+section .right .contact .photo input{
+    width: 80%;
+    padding: 0.5vw 2vw;
+    background-color: white;
+    color: grey;
+    font-size: 1.1vw;
+    margin-bottom: 1vw;
+    border: none;
+    border-radius: 0.5vw;
+    outline: none;
+    height: 3vw;
+}
+
+section .right .contact .photo textarea{
+    width: 80%;
+    height: 7vw;
+    padding: 0.5vw 2vw;
+    background-color: white;
+    color: grey;
+    font-size: 1.1vw;
+    margin-bottom: 2vw;
+    border: none;
+    border-radius: 0.5vw;
+    outline: none;
+}
+
+section .right .contact .photo button{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 0;
+    background-color: rgb(224, 8, 83);
+    color: white;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 1vw;
+}
+
+section .right .contact .photo  button:hover{
+    background-color: rgb(12, 11, 48);
+}
+
+section .right .contact .photo button:active{
+    background-color: rgb(224, 8, 83);
+}
+
 
 
 section .left{
@@ -912,7 +1097,7 @@ section .right .fa-align-justify{
   position: absolute;
   top: 1vw;
   right: 1vw;
-  font-size: 3vw;
+  font-size: 5vw;
   color: white;
   z-index: 1;
   display: none;
@@ -921,8 +1106,8 @@ section .right .fa-align-justify{
   justify-content: center;
   background-color: rgb(44, 108, 219);
   border-radius: 50%;
-  height: 6vw;
-  width: 6vw;
+  height: 8vw;
+  width: 8vw;
   display: none;
   transition: 0.15s;
 }
@@ -933,54 +1118,164 @@ section .right .fa-align-justify:active{
 
 
 @media (max-width: 780px) {
-
     section{
-        width: 100vw;
-        height: 95vh;
+        width: 100%;
         background-color: rgb(245, 241, 241);
         display: flex;
         align-items: center;
         justify-content:center;
-        padding: 0.5vw;
         position: relative;
+        background-color: blueviolet;
     }
 
    section .left{
-    width: 60%;
+    width: 80%;
     transform: translateX(-100vw);
     position: absolute;
     background-color: black;
     z-index: 1;
-    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: start;
     flex-direction: column;
     padding: 2vw;
     transition: 0.3s;
-    height: 98%;
+    height: auto;
+    top: 0.5vw;
     }
 
+    
+section .right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 0.2vw rgb(199, 195, 195);
+    position: relative;
+}
+
+
+
+    
+section .right .home{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background:url(./image/back.jpg),rgb(47, 72, 85);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 20vw;
+    padding-left: 0;
+}
+
+section .right .home .science-box-2{
+    display: none;
+}
+
+section .right .home .love{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 20vw;
+}
+
+
+section .right .home .love .p-god{
+    color: white;
+    font-size: 4.8vw;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+
+section .right .home .h4-dorcilas{
+    font-size: 11vw;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 3vw;
+    word-spacing: 0.3vw;
+}
+
+section .right .home .about-btn{
+    width: 80%;
+    border: white;
+    background-color: rgb(12, 11, 48);
+    border-radius: 2vw;
+    padding: 2vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+section .right .home .about-btn:active{
+  background-color: black;
+
+}
+section .right .home .p-physicist{
+    font-size: 9vw;
+    font-weight: 500;
+    color: antiquewhite;
+    text-transform: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20vw;
+}
+
+section .right .home .p-physicist span{
+    font-size: 6vw;
+    color: white;
+    font-style: italic;
+}
+
+
+
     section .left .name-photo img{
-        width: 13vw;
-        height: 13vw;
+        width: 20vw;
+        height: 20vw;
+        margin-bottom: 3vw;
     }
 
     section .left .name-photo h5{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0.5vw 2vw;
+        padding: 1vw 3vw;
         color: white;
-        background-color: rgb(15, 69, 161);
-        font-size: 3vw;
+        /* background-color: rgb(15, 69, 161); */
+        font-size: 6vw;
+    }
+
+    section .left .page .about{
+        width: 100%;
+        /* background-color: blueviolet; */
+        display: flex;
+        align-items: center;
+        justify-content: start;
     }
 
     section .left .page .about h3{
-       font-size: 2.5vw;
+       font-size: 3vw;
+       margin-left: 1vw;
     }
     section .left .page .about h3 i{
-        font-size: 2vw;
+        font-size: 4vw;
     }
 
     section .left .social{
@@ -989,11 +1284,11 @@ section .right .fa-align-justify:active{
     }
     
     section .left .social i{
-       font-size: 3vw;
+       font-size: 4vw;
     }
 
     section .left .page .about i{
-        font-size: 2vw;
+        font-size: 5vw;
     }
 
     section .right .fa-align-justify{
@@ -1031,6 +1326,15 @@ section .right .about{
     overflow: scroll;
 }
 
+
+section .right .about .upper .dot{
+    width: 3vw;
+    height: 3vw;
+    background-color: rgb(224, 8, 83);
+    border-radius: 50%;
+    display: inline-block;
+}
+
 section .right .about .info {
     display: flex;
     align-items: center;
@@ -1045,10 +1349,10 @@ section .right .about .info .birth{
 }
 
 section .right .about .info .birth h6{
-    font-size: 3vw;
+    font-size: 5vw;
 }
 section .right .about .info .birth p{
-    font-size: 2.4vw;
+    font-size: 4.5vw;
 }
 
 section .right .about .info img{
@@ -1072,27 +1376,27 @@ section .right .about .info .chevron .contentDiv{
 }
 
 section .right .about .info .chevron .contentDiv .content i{
-  font-size: 2.4vw;
+  font-size: 4vw;
 }
 
 section .right .about .info .chevron .contentDiv .content h6{
-    font-size: 2.4vw;
+    font-size: 4.5vw;
   }
   section .right .about .info .chevron .contentDiv .content span{
-    font-size: 2.4vw;
+    font-size: 4.5vw;
   }
 
 
 section .right .about .upper h3{
-    font-size: 4vw;
+    font-size: 7vw;
 }
 
 section .right .about .upper p{
-    font-size: 2.4vw;
+    font-size: 4vw;
 }
 
 section .right .about .upper p span{
-    font-size: 2.4vw;
+    font-size: 3vw;
 }
 
 section .right .skills{
@@ -1102,36 +1406,60 @@ section .right .skills{
     flex-direction: column;
 }
 
+
+
+section .right .skills .skill-up{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10vw;
+}
+
 section .right .skills .skill-up h3{
-    font-size: 4vw;
+    font-size: 7vw;
 }
 
 section .right .skills .skill-up p{
-    font-size: 2.3vw;
+    font-size: 4vw;
 }
 
 section .right .skills .skill-down .skill-down-left .content .letter h5{
-  font-size: 2.3vw;
+  font-size: 4vw;
 }
   
 section .right .skills .skill-down .skill-down-left .content{
-    margin-bottom: 2vw;
+    margin-bottom: 3vw;
   }
+
     
+  
+section .right .skills .skill-down .skill-down-left .content .graph{
+    width: 100%;
+    height: 3vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+
   section .right .work {
     overflow: scroll;
   }
 
   section .right .work .upper h3{
-    font-size: 4vw;
+    font-size: 7vw;
   }
   
   section .right .work .upper p{
-    font-size: 2.3vw;
+    font-size: 4vw;
   }
   
   section .right .work .upper p span{
-    font-size: 2.3vw;
+    font-size: 4vw;
   }
   
   
@@ -1142,7 +1470,7 @@ section .right .skills .skill-down .skill-down-left .content{
   section .right .work  .number-holder .number-of-div{
     width: 4vw;
     height: 4vw;
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
 
@@ -1152,7 +1480,7 @@ section .right .work .down .project .description h6{
     margin-bottom: 0.5vw;
     color: rgb(44, 108, 219);
     background-color: white;
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -1169,33 +1497,29 @@ section .right .work .down .project .description h6{
   
   section .right .work .down .project .description p{
       color: white;
-      font-size: 2vw;
+      font-size: 3.5vw;
       font-weight: 300;
       text-align: center;
+      display: none;
   }
   
   section .right .work .down .project .description p span{
-      font-size: 2vw;
+      font-size: 4vw;
       font-style: italic;
       text-transform: capitalize;
   }
   
   
 section .right .work .down .project img{
-    width: 100%;
+    width: 15vw;
     height: 15vw;
-    border-radius: 0.2vw;
+    border: radius 50%;;
     margin-bottom: 1vw;
     object-fit: cover;
     object-position: center;
+    margin-bottom: 4vw;
 }
   
-
-
-
-
-
-
 
 
 /* contact */
@@ -1224,7 +1548,7 @@ section .right .contact .upper{
 
 
 section .right .contact .upper h3{
-    font-size: 4vw;
+    font-size: 7vw;
     color: rgb(15, 69, 161);
     margin-bottom: 1vw;
     padding: 0.5vw;
@@ -1234,37 +1558,42 @@ section .right .contact .upper h3{
 
 
 section .right .contact .upper  p{
-    color: grey;
-    font-size: 2.4vw;
+    color: rgb(214, 220, 221);
+    font-size: 4vw;
     font-weight: 400;
+    width: 100%;
 }
+
 
 section .right .contact .info{
-    width: 70%;
-    display: flex;
-    align-items: start;
-    justify-self: start;    
-    margin-bottom: 3vw;
-    background-color: rgb(44, 108, 219);
-}
-
-section .right .contact .info .tool{
-    width: 100% !important;
-    height: auto !important;
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between !important;
+    justify-content: center;
+    flex-direction: column;
     margin-bottom: 3vw;
-    box-shadow: none !important;
-    padding: 1vw 0.5vw;
-    border-bottom: solid 0.1vw white;
+    padding: 2vw;
+     background-color: rgba(31, 38, 48, 0.5);
+}
+
+
+section .right .contact .tool{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 13vw;
+    margin-bottom: 3vw;
+    padding: 2vw;
+   border: solid rgb(214, 220, 221) 0.1vw;
 }
 
 section .right .contact .info .tool i{
-    width: 5vw;
-    height: 5vw;
+    width: 8vw;
+    height: 8vw;
     background-color:white;
-    color: rgb(44, 108, 219);
+    color: rgb(12, 11, 48);
     font-size: 3vw;
     display: flex;
     align-items: center;
@@ -1273,24 +1602,38 @@ section .right .contact .info .tool i{
 }
 
 section .right .contact .info .tool  h4{
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: 400;
     color: white;
 }
 
 section .right .contact .photo{
-    width: 40vw;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: -10vw;
-    background: url(./image/callbackground.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 2vw;
-    background-size: cover;
-    display: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  padding: 3vw;
+}
+section .right .contact .photo input{
+  width: 100%;
+  height: 10vw;
+  font-size: 3.5vw;
+}
+
+section .right .contact .photo textarea{
+  width: 100%;
+  height: 15vw;
+  font-size: 3.5vw;
+}
+
+section .right .contact .photo button{
+    width: 60%;
+    padding: 3vw 0;
+    font-size: 4vw;
 }
 
 
