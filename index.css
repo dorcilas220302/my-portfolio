@@ -1580,7 +1580,6 @@ section .right .contact .info{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 3vw;
     padding: 2vw;
      background-color: rgba(31, 38, 48, 0.5);
 }
@@ -1622,7 +1621,7 @@ section .right .contact .photo{
   justify-content: space-between;
   flex-wrap: wrap;
   height: auto;
-  bottom:30vw;
+  bottom: 250px;
   left: 0;
   padding: 3vw;
 }
