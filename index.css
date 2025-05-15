@@ -1106,8 +1106,8 @@ section .right .fa-align-justify{
   justify-content: center;
   background-color: rgb(44, 108, 219);
   border-radius: 50%;
-  height: 8vw;
-  width: 8vw;
+  height: 9vw;
+  width: 9vw;
   display: none;
   transition: 0.15s;
 }
@@ -1188,7 +1188,7 @@ section .right .home .love{
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: 20vw;
+    bottom: 25vw;
 }
 
 
@@ -1213,14 +1213,14 @@ section .right .home .h4-dorcilas{
 section .right .home .about-btn{
     width: 80%;
     border: white;
-    background-color: rgb(12, 11, 48);
+    background-color:rgb(20, 18, 81);
     border-radius: 2vw;
-    padding: 2vw 0;
+    padding: 5vw 0;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 5vw;
+    font-size: 7vw;
     font-weight: 500;
 }
 
@@ -1327,6 +1327,9 @@ section .right .about{
 }
 
 
+section .right .about .upper {
+   margin-bottom: 18vw;
+}
 section .right .about .upper .dot{
     width: 3vw;
     height: 3vw;
@@ -1414,7 +1417,7 @@ section .right .skills .skill-up{
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 10vw;
+    margin-bottom: 18vw;
 }
 
 section .right .skills .skill-up h3{
@@ -1448,6 +1451,11 @@ section .right .skills .skill-down .skill-down-left .content .graph{
 
   section .right .work {
     overflow: scroll;
+  }
+
+  
+  section .right .work .upper{
+    margin-bottom: 18vw;
   }
 
   section .right .work .upper h3{
@@ -1614,7 +1622,7 @@ section .right .contact .photo{
   justify-content: space-between;
   flex-wrap: wrap;
   height: auto;
-  bottom: 0;
+  bottom: 20vw;
   left: 0;
   padding: 3vw;
 }
