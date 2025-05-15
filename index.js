@@ -344,10 +344,153 @@ toWhatsapp.addEventListener("mouseout",()=>{
 
 
 const btnAboutOpen=document.querySelector("#btn-about-open")
+const btnskillsOpen=document.querySelector("#about-btn")
+const btnworkOpen=document.querySelector("#skill-btn")
+const btnContactOpen=document.querySelector("#work-btn")
+
+
+
 
 btnAboutOpen.addEventListener("click",async()=>{
     sectionToOpen[1].style.transition="0.5s"
     sectionToOpen[1].style.transform="scale(1.0)rotateX(360deg)"
 
+    sectionToOpen[0].style.transform="scale(0)"
+    sectionToOpen[2].style.transform="scale(0)"
+    sectionToOpen[3].style.transform="scale(0)"
+    sectionToOpen[4].style.transform="scale(0)"
+
+
+
+
+})
+
+
+
+btnskillsOpen.addEventListener("click",async()=>{
+    sectionToOpen[2].style.transition="0.5s"
+    sectionToOpen[2].style.transform="scale(1.0)rotateX(360deg)"
+
+    sectionToOpen[0].style.transform="scale(0)"
+    sectionToOpen[1].style.transform="scale(0)"
+    sectionToOpen[3].style.transform="scale(0)"
+    sectionToOpen[4].style.transform="scale(0)"
+
+
+
+
+    
+    htmlAnimation.style.animation='none'
+    phpAnimation.style.animation='none'
+    cssAnimation.style.animation='none'
+    javaAnimation.style.animation='none'
+    nodeAnimation.style.animation='none'
+    expressAnimation.style.animation='none'
+    mathAnimation.style.animation='none'
+    physicsAnimation.style.animation='none'
+    reactAnimation.style.animation='none'
+    sellAnimation.style.animation='none'
+
+
+    htmlAnimation.offsetWidth
+    phpAnimation.offsetWidth
+    cssAnimation.offsetWidth
+    javaAnimation.offsetWidth
+    sellAnimation.offsetWidth
+
+    reactAnimation.offsetWidth
+    nodeAnimation.offsetWidth
+    expressAnimation.offsetWidth
+    mathAnimation.offsetWidth
+    physicsAnimation.offsetWidth
+
+
+htmlAnimation.style.animation=`html-animation 5s ease-in-out forwards`
+cssAnimation.style.animation=`html-animation 5s ease-in-out forwards`
+sellAnimation.style.animation=`html-animation 5s ease-in-out forwards`
+
+javaAnimation.style.animation=`html-animation 5s ease-in-out forwards`
+expressAnimation.style.animation=`html-animation 5s ease-in-out forwards`
+mathAnimation.style.animation=`html-animation 5s ease-in-out forwards`
+physicsAnimation.style.animation=`html-animation 5s ease-in-out forwards`
+
+phpAnimation.style.animation=`php-animation 5s ease-in-out forwards`
+nodeAnimation.style.animation=`node-animation 5s ease-in-out forwards`
+reactAnimation.style.animation=`node-animation 5s ease-in-out forwards`
+
+
+   
+  let g=0
+ let f=0
+let z=0
+
+
+const htmlControler=async()=>{
+setInterval(() => {
+  if (g <= 79) {
+      g=g+1
+      textContentHtml.forEach(hundred => {
+          hundred.textContent=""
+          hundred.textContent=`${g}%`
+      });
+  }
+}, 50);
+}
+
+
+
+const phpControler=async()=>{
+setInterval(() => {
+  if (f <= 69) {
+      f=f+1
+      textContentPhp.textContent=""
+      textContentPhp.textContent=`${f}%`
+  }
+}, 50);
+}
+
+
+const nodeControler=async()=>{
+setInterval(() => {
+  if (z <= 84) {
+      z=z+1
+      textContentNode.textContent=""
+      textContentNode.textContent=`${z}%`
+  }
+}, 50);
+}
+
+
+
+nodeControler()
+phpControler()
+htmlControler()
+
+
+})
+
+
+btnworkOpen.addEventListener("click",async()=>{
+    sectionToOpen[3].style.transition="0.5s"
+    sectionToOpen[3].style.transform="scale(1.0)rotateX(360deg)"
+
+    sectionToOpen[0].style.transform="scale(0)"
+    sectionToOpen[1].style.transform="scale(0)"
+    sectionToOpen[2].style.transform="scale(0)"
+    sectionToOpen[4].style.transform="scale(0)"
+
+
+
+})
+
+
+btnContactOpen.addEventListener("click",async()=>{
+    sectionToOpen[4].style.transition="0.5s"
+    sectionToOpen[4].style.transform="scale(1.0)rotateX(360deg)"
+
+    sectionToOpen[0].style.transform="scale(0)"
+    sectionToOpen[1].style.transform="scale(0)"
+    sectionToOpen[2].style.transform="scale(0)"
+    sectionToOpen[3].style.transform="scale(0)"
 
 })

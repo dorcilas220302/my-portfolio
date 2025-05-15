@@ -295,15 +295,16 @@ section .right .home .love{
     align-items: center;
     justify-content: center;
     padding: 1vw;
-    width: 100%;
+    width: auto;
     position: absolute;
-    right: 10vw;
+    left: 10vw;
     bottom: 3vw;
+    background-color: white;
 }
 
 section .right .home .love p{
-    color: rgb(199, 195, 195);
-    font-size: 2vw;
+    color: rgb(20, 18, 81);
+    font-size: 1.5vw;
     font-weight: 500;
     text-align: center;
     width: 100%;
@@ -322,7 +323,7 @@ section .right .home h4{
 }
 
 section .right .home p{
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     font-weight: 400;
     color: antiquewhite;
     text-transform: capitalize;
@@ -1095,7 +1096,7 @@ section .right{
 
 section .right .fa-align-justify{
   position: absolute;
-  top: 1vw;
+  top: 2vw;
   right: 1vw;
   font-size: 5vw;
   color: white;
@@ -1105,7 +1106,6 @@ section .right .fa-align-justify{
   align-items: center;
   justify-content: center;
   background-color: rgb(44, 108, 219);
-  border-radius: 50%;
   height: 9vw;
   width: 9vw;
   display: none;
@@ -1114,6 +1114,24 @@ section .right .fa-align-justify{
 
 section .right .fa-align-justify:active{
     background-color: black;
+}
+
+section .right .home #mobile-atom{
+    display: none;
+}
+
+
+section .right .about #about-btn{
+    display: none;
+}
+
+
+section .right .skills #skill-btn{
+    display: none;
+}
+
+section .right .work #work-btn{
+    display: none;
 }
 
 
@@ -1157,6 +1175,71 @@ section .right{
 }
 
 
+section .right .about #about-btn{
+    width: 99%;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(64, 92, 141, 0.7);
+    font-size: 6vw;
+    color: white;
+    font-weight: 600;
+    /* display: none; */
+    border: none;
+    border-radius: 2vw;
+    margin-top: 10vw;
+}
+
+section .right .about #about-btn:active{
+    background-color: black;
+}
+
+
+
+section .right .skills #skill-btn{
+    width: 99%;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(64, 92, 141, 0.7);
+    font-size: 6vw;
+    color: white;
+    font-weight: 600;
+    /* display: none; */
+    border: none;
+    border-radius: 2vw;
+    margin-top: 10vw;
+}
+
+section .right .skills #skill-btn:active{
+    background-color: black;
+}
+
+
+
+section .right .work #work-btn{
+    width: 99%;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(64, 92, 141, 0.7);
+    font-size: 6vw;
+    color: white;
+    font-weight: 600;
+    /* display: none; */
+    border: none;
+    border-radius: 2vw;
+    margin-top: 10vw;
+}
+
+section .right .work #work-btn:active{
+    background-color: black;
+}
+
+
 
     
 section .right .home{
@@ -1176,6 +1259,25 @@ section .right .home{
     padding-left: 0;
 }
 
+
+section .right .home #mobile-atom{
+    display: flex;
+    font-size: 15vw;
+    color: white;
+    margin-bottom: 4vw;
+    animation: atom-animation 2s infinite backwards;
+}
+
+@keyframes atom-animation {
+    0%{
+        transform: rotateZ(0);
+    }
+    100%{
+        transform: rotateZ(360deg);
+
+    }
+}
+
 section .right .home .science-box-2{
     display: none;
 }
@@ -1188,7 +1290,9 @@ section .right .home .love{
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: 25vw;
+    bottom: 30vw;
+    background-color: transparent !important;
+
 }
 
 
@@ -1203,7 +1307,7 @@ section .right .home .love .p-god{
 
 
 section .right .home .h4-dorcilas{
-    font-size: 11vw;
+    font-size: 12vw;
     color: white;
     text-transform: capitalize;
     margin-bottom: 3vw;
@@ -1215,7 +1319,7 @@ section .right .home .about-btn{
     border: white;
     background-color:rgb(20, 18, 81);
     border-radius: 2vw;
-    padding: 5vw 0;
+    padding: 3vw 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1342,6 +1446,8 @@ section .right .about .info {
     display: flex;
     align-items: center;
     justify-content: center;
+    background:linear-gradient(rgb(25, 3, 81),rgb(224, 8, 83),rgb(25, 3, 81),rgb(125, 5, 47));
+    border: solid rgb(59, 43, 100) 0.15vw;
 }
 
 section .right .about .info .birth{
@@ -1351,8 +1457,15 @@ section .right .about .info .birth{
     flex-direction: column;
 }
 
-section .right .about .info .birth h6{
+section .right .about .info .birth #h6-birth{
     font-size: 5vw;
+    background-color: white;
+    color: rgb(20, 18, 81);
+    font-weight: bold;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 section .right .about .info .birth p{
     font-size: 4.5vw;
@@ -1384,6 +1497,7 @@ section .right .about .info .chevron .contentDiv .content i{
 
 section .right .about .info .chevron .contentDiv .content h6{
     font-size: 4.5vw;
+    background-color: none !important;
   }
   section .right .about .info .chevron .contentDiv .content span{
     font-size: 4.5vw;
@@ -1426,6 +1540,11 @@ section .right .skills .skill-up h3{
 
 section .right .skills .skill-up p{
     font-size: 4vw;
+}
+
+
+section .right .skills .skill-down {
+background: rgba(255, 255, 255, 0.1);  
 }
 
 
@@ -1498,6 +1617,11 @@ section .right .work .down .project .description h6{
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  
+section .right .work .down{
+    height: 30vw;
   }
   
 
@@ -1626,7 +1750,7 @@ section .right .contact .photo{
   justify-content: space-between;
   flex-wrap: wrap;
   height: auto;
-  bottom: 170px;
+  bottom: 160px;
   left: 0;
   padding: 3vw;
 }
