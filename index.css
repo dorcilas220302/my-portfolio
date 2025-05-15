@@ -1454,11 +1454,11 @@ section .right .about .info .birth{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-top: 4vw;
 }
 
 section .right .about .info .birth #h6-birth{
     font-size: 5vw;
-    background-color: white;
     font-weight: bold;
     width: 80%;
     display: flex;
@@ -1467,6 +1467,8 @@ section .right .about .info .birth #h6-birth{
     color: white;
     text-transform: uppercase;
     margin-bottom: 2vw;
+    background-color: rgba(224, 8, 83,0.4);
+    margin-bottom: 5vw;
 }
 section .right .about .info .birth p{
     font-size: 4.5vw;
