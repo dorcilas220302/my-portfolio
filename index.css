@@ -1550,7 +1550,7 @@ section .right .contact .upper{
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 3vw;
+    margin-bottom: 10vw;
     padding: 2vw;
 }
 
@@ -1622,7 +1622,7 @@ section .right .contact .photo{
   justify-content: space-between;
   flex-wrap: wrap;
   height: auto;
-  bottom: 20vw;
+  bottom:30vw;
   left: 0;
   padding: 3vw;
 }
