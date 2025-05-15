@@ -1264,7 +1264,7 @@ section .right .home #mobile-atom{
     display: flex;
     font-size: 15vw;
     color: white;
-    margin-bottom: 4vw;
+    margin-bottom: 7vw;
     animation: atom-animation 2s infinite backwards;
 }
 
@@ -1314,6 +1314,7 @@ section .right .home .h4-dorcilas{
     word-spacing: 0.3vw;
 }
 
+
 section .right .home .about-btn{
     width: 80%;
     border: white;
@@ -1339,7 +1340,7 @@ section .right .home .p-physicist{
     text-transform: none;
     width: 100%;
     text-align: center;
-    margin-bottom: 20vw;
+    margin-bottom: 14vw;
 }
 
 section .right .home .p-physicist span{
@@ -1432,7 +1433,7 @@ section .right .about{
 
 
 section .right .about .upper {
-   margin-bottom: 18vw;
+   margin-bottom: 13vw;
 }
 section .right .about .upper .dot{
     width: 3vw;
@@ -1446,8 +1447,6 @@ section .right .about .info {
     display: flex;
     align-items: center;
     justify-content: center;
-    background:linear-gradient(rgb(25, 3, 81),rgb(224, 8, 83),rgb(25, 3, 81),rgb(125, 5, 47));
-    border: solid rgb(59, 43, 100) 0.15vw;
 }
 
 section .right .about .info .birth{
@@ -1460,12 +1459,14 @@ section .right .about .info .birth{
 section .right .about .info .birth #h6-birth{
     font-size: 5vw;
     background-color: white;
-    color: rgb(20, 18, 81);
     font-weight: bold;
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
 }
 section .right .about .info .birth p{
     font-size: 4.5vw;
@@ -1531,7 +1532,7 @@ section .right .skills .skill-up{
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 18vw;
+    margin-bottom: 16vw;
 }
 
 section .right .skills .skill-up h3{
@@ -1750,7 +1751,7 @@ section .right .contact .photo{
   justify-content: space-between;
   flex-wrap: wrap;
   height: auto;
-  bottom: 160px;
+  bottom: 145px;
   left: 0;
   padding: 3vw;
 }
