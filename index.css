@@ -1428,6 +1428,11 @@ section .right .skills .skill-up p{
     font-size: 4vw;
 }
 
+
+section .right .skills .skill-down .skill-down-left{
+    padding: 5vw;
+  }
+
 section .right .skills .skill-down .skill-down-left .content .letter h5{
   font-size: 4vw;
 }
@@ -1621,7 +1626,7 @@ section .right .contact .photo{
   justify-content: space-between;
   flex-wrap: wrap;
   height: auto;
-  bottom: 250px;
+  bottom: 170px;
   left: 0;
   padding: 3vw;
 }
